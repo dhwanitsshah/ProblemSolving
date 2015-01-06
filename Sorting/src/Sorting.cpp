@@ -11,7 +11,7 @@ void  insertionSort(int[], int);
 int main() {
 
 	int a[] = { 12, 11, 3, 2, 8, 2, 1 };
-	int len = sizeof(a) / sizeof(int);
+	int len = sizeof(a) / sizeof(a[0]);
 
 	cout << "Before Sorting: ";
 	print(a, len);

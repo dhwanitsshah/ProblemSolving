@@ -20,6 +20,7 @@ public:
 	void print();
 	void remove(int id, string name);
 	void reverse();
+	void xchgKthNode(int k);
 
 };
 }

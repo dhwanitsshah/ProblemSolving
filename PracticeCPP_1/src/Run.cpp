@@ -1,22 +1,24 @@
 //============================================================================
-// Name        : Array.cpp
+// Name        : PracticeCPP_1.cpp
 // Author      : Dhwanit Shah
 // Version     :
 // Copyright   : Your copyright notice
 // Description : Hello World in C++, Ansi-style
 //============================================================================
 
-#include<iostream>
-#include "string.h"
-#include "merge.hpp"
+#include "Sample.hpp"
 
-using namespace std;
+using namespace ns_sample;
 
-int main1() {
+int main() {
 
-	int arr1[] = { 3, 2, -1, 3, -4, -1, 6, 6 };
-	int arr2[] = { 4, 5, 6, 2, -1, 6, 2 };
+	Sample sam("Hello World");
+	Sample sam2 = sam; //Deep Copy using Copy Constructor
+	sam.ptr->assign("Hello Dhwanit");
 
-	int *arr3 = mergeTwoArrayRemoveDuplicates(arr1, arr2);
-	printArray(arr3);
+	cout<<sam.getContent() << endl;
+	cout<<sam2.getContent();
+
+	return 0;
 }
+
